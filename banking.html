@@ -20,11 +20,11 @@
             <div class="grid grid-cols-3 gap-8  text-white ">
                 <div class="bg-blue-500 font-semibold p-8 rounded ">
                     <h1 class="text-2xl">Diposit</h1>
-                    <h3 class="text-3xl">$$00</h3>
+                    <h3  class="text-3xl">$$<span id="diposit-blance">00</span></h3>
                 </div>
                 <div class="bg-yellow-500 font-semibold p-8 rounded ">
                     <h1 class="text-2xl">Withdraw</h1>
-                    <h3 class="text-3xl">$$00</h3>
+                    <h3 id="withdraw-balance" class="text-3xl">$$00</h3>
                 </div>
                 <div class="bg-red-500 font-semibold p-8 rounded ">
                     <h1 class="text-2xl">Balance</h1>
@@ -41,7 +41,7 @@
                     <input id="user-email" class="bg-zinc-200	px-6 w-3/4 pl-4 block border border-gray-300 rounded mb-4 mt-4 ml-4	" type="text" name="" id="" placeholder="Pleace Deposit">
                     
                 
-                  <button id="submite-button" class=" bg-orange-500 p-4 rounded text-neutral-50 ml-4">Deposit</button>
+                  <button id="diposit-submite-button" class=" bg-orange-500 p-4 rounded text-neutral-50 ml-4">Deposit</button>
                 </div>
                
                 <div class="bg-pink-400	 mt-8 rounded p-8">
@@ -56,5 +56,6 @@
             </div>
         </section>
     </main>
+    <script src="js/banking.js"></script>
 </body>
 </html>
