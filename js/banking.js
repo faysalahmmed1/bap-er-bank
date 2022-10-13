@@ -1,21 +1,7 @@
-//banking page js
-
-// document.getElementById('diposit-submite-button').addEventListener('click', function(){
-//     const userEmailPlace = document.getElementById('user-email');
-//     const userEmailInput = userEmailPlace.value;
-//     // console.log(userEmailInput);
-//     const dipositBalance = document.getElementById('diposit-blance');
-//     const dipositBalanceAmound = dipositBalance.innerText;
-//     const dipositBalanceAmoundTotal = dipositBalanceAmound + userEmailInput;
-//     dipositBalanceAmoundTotal.innerText = dipositBalance;
-
-//     userEmailPlace.value = '';
-    
-// })
-
+//diposit codeing
 
 document.getElementById('diposit-submite-button').addEventListener('click', function(){
-    const userEmail = document.getElementById('user-email');
+    const userEmail = document.getElementById('diposit-input');
     const userEmailFiled = userEmail.value;
     const userEmailInput = parseFloat(userEmailFiled);
     
@@ -36,4 +22,25 @@ document.getElementById('diposit-submite-button').addEventListener('click', func
 
     userEmail.value = '';
 
+});
+
+
+// withdraw codeing
+
+document.getElementById('withdraw-submite-button').addEventListener('click', function(){
+    const withdrawInput = document.getElementById('withdraw-input')
+    const withdrawInputFiled = withdrawInput.value;
+    const withdrawInputAmount = parseFloat(withdrawInputFiled);
+
+    const withdrawBlance = document.getElementById('withdraw-blance');
+    const withdrawBlanceFiled = withdrawBlance.innerText;
+    const withdrawBlanceAmound = parseFloat(withdrawBlanceFiled);
+
+    const newwithdrawBlance = withdrawBlanceAmound + withdrawInputAmount;
+    withdrawBlance.innerText = newwithdrawBlance;
+
 })
+
+
+
+
