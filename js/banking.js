@@ -38,6 +38,17 @@ document.getElementById('withdraw-submite-button').addEventListener('click', fun
 
     const newwithdrawBlance = withdrawBlanceAmound + withdrawInputAmount;
     withdrawBlance.innerText = newwithdrawBlance;
+    withdrawInput.value ='';
+
+
+// total blance
+    const blanceTotal = document.getElementById('blance-total');
+    const lastBlanceText = blanceTotal.innerText;
+    const lastBlanceTextAmound = parseFloat(lastBlanceText);
+    const newTotalAmound = lastBlanceTextAmound - withdrawBlanceAmound;
+    blanceTotal.innerText = newTotalAmound;
+
+
 
 })
 
