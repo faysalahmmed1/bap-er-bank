@@ -45,7 +45,7 @@ document.getElementById('withdraw-submite-button').addEventListener('click', fun
     const blanceTotal = document.getElementById('blance-total');
     const lastBlanceText = blanceTotal.innerText;
     const lastBlanceTextAmound = parseFloat(lastBlanceText);
-    const newTotalAmound = lastBlanceTextAmound - withdrawBlanceAmound;
+    const newTotalAmound = lastBlanceTextAmound - withdrawInputAmount;
     blanceTotal.innerText = newTotalAmound;
 
 
